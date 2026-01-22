@@ -3,20 +3,20 @@
 <head>
     <title>Combinators</title>
     <style>
-        /* descendant divs inside the container */
-        .container div {
+        /* descendant divs inside the span */
+        span div {
             color: orange;
         }
-        /* direct children divs of the container */
-        .container > div {
+        /* direct children divs of the span */
+        span > div {
             font-size: 2rem;
         }
-        /* adjacent sibling div immediately after the container */
-        .container + div {
+        /* adjacent sibling div immediately after the span */
+        span + div {
             color: red;
         }
-        /* any following sibling divs of the container */
-        .container ~ div {
+        /* any following sibling divs of the span */
+        span ~ div {
             background-color: yellow;
         }
 
@@ -24,13 +24,13 @@
 </head>
 
 <body>
-    <div class="container">
-      <div>First</div>
-      <article>
-        <div>Second</div>
-      </article>
-      <div>Third</div>
-    </div>
+        <span>
+                <div>First</div>
+                <article>
+                        <div>Second</div>
+                </article>
+                <div>Third</div>
+        </span>
     <div>Fourth</div>
     <div>Fifth</div>
 </body>
